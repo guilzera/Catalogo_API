@@ -11,7 +11,6 @@ namespace APICatalogo.Migrations
             migrationBuilder.Sql("Insert into Categorias(Nome, ImagemUrl) Values('Bebida', 'bebidas.jpg')");
             migrationBuilder.Sql("Insert into Categorias(Nome, ImagemUrl) Values('Lanches', 'lanches.jpg')");
             migrationBuilder.Sql("Insert into Categorias(Nome, ImagemUrl) Values('Sobremesas', 'sobremesas.jpg')");
-
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
