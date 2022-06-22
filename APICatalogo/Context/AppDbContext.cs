@@ -12,6 +12,6 @@ namespace APICatalogo.Context
         public DbSet<Produto>? Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("Server=NOTEBOOK-5KP7FMEG\\SQLEXPRESS;Database=APICATALOGO;Trusted_Connection=True;");
+            => options.UseSqlServer("Server=NOTEBOOK\\SQLEXPRESS;Database=APICATALOGO;Trusted_Connection=True;");
     }
 }

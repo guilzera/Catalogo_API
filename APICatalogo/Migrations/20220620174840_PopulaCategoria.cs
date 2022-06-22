@@ -4,7 +4,7 @@
 
 namespace APICatalogo.Migrations
 {
-    public partial class PopulaCategorias : Migration
+    public partial class PopulaCategoria : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

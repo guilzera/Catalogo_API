@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TvwsOR5SYXpa6lN8G04tPQmT8xTV2nLKIlEHPAn94qRaNAvaFz8oBEySSiecHJ1aWhk7XlPRx1ktGSt82OczfQ==",
+  "dgSpecHash": "fr6gzULfmhoWA1qZdEO2DvRrBM4xjT1beHnBMq1BGEbgPLaKLRhO8XIbhd4iwKjjDSRuzGhL5S8E/LpG9I0Mew==",
   "success": true,
-  "projectFilePath": "C:\\projetos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+  "projectFilePath": "C:\\Desenvolvimento\\C#\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guigu\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\guigu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

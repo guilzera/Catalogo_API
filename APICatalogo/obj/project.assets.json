@@ -2109,11 +2109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projetos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+      "projectUniqueName": "C:\\Desenvolvimento\\C#\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
       "projectName": "APICatalogo",
-      "projectPath": "C:\\projetos\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+      "projectPath": "C:\\Desenvolvimento\\C#\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
       "packagesPath": "C:\\Users\\guigu\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\APICatalogo\\APICatalogo\\obj\\",
+      "outputPath": "C:\\Desenvolvimento\\C#\\APICatalogo\\APICatalogo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guigu\\AppData\\Roaming\\NuGet\\NuGet.Config",
