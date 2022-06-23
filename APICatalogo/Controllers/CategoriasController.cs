@@ -27,23 +27,40 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categoria = _context.Categorias?.AsNoTracking().Take(10).ToList();
-            if (categoria is null) return NotFound("categoria não encontrada...");
-            return categoria;
+            try
+            {
+                throw new DataMisalignedException();
+                var categoria = _context.Categorias?.AsNoTracking().Take(10).ToList();
+                if (categoria is null) return NotFound("categoria não encontrada...");
+                return categoria;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao tratar sua solicitação");
+            } 
         }
 
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _context.Categorias?.AsNoTracking().FirstOrDefault(p => p.CategoriaId == id);
-            if (categoria is null) return NotFound("categoria não encontrada...");
-            return categoria;
+            try
+            {
+                var categoria = _context.Categorias?.AsNoTracking().FirstOrDefault(p => p.CategoriaId == id);
+                if (categoria is null) return NotFound($"Categoria com o id{id} não localizada");
+                return Ok(categoria);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao tratar sua solicitação");
+            }
         }
 
         [HttpPost]
         public ActionResult Post(Categoria categoria)
         {
-            if (categoria is null) return BadRequest();
+            if (categoria is null) return BadRequest("Dados Inválidos");
             _context.Categorias.Add(categoria);
             _context.SaveChanges();
             return new CreatedAtRouteResult("ObterCategoria",
@@ -53,7 +70,7 @@ namespace APICatalogo.Controllers
         [HttpPut("{id:int}")]
         public ActionResult Put(int id, Categoria categoria)
         {
-            if (id != categoria.CategoriaId) return BadRequest();
+            if (id != categoria.CategoriaId) return BadRequest("Dados Inválidos");
             _context.Entry(categoria).State = EntityState.Modified;
             _context.SaveChanges();
             return Ok(categoria);
@@ -63,7 +80,7 @@ namespace APICatalogo.Controllers
         public ActionResult Delete(int id)
         {
             var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            if (categoria is null) return NotFound("categoria não localizado");
+            if (categoria is null) return NotFound($"categoria com o id{id} não localizada");
             _context.Categorias.Remove(categoria);
             _context.SaveChanges();
             return Ok(categoria);

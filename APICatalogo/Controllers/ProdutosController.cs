@@ -19,23 +19,39 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Produto>> Get()
         {
-            var produtos = _context.Produtos?.AsNoTracking().Take(10).ToList();
-            if (produtos is null) return NotFound("Produtos não encontrados...");
-            return produtos;
+            try
+            {
+                var produtos = _context.Produtos?.AsNoTracking().Take(10).ToList();
+                if (produtos is null) return NotFound("Produtos não encontrados...");
+                return produtos;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao tratar sua solicitação");
+            }
         }
 
         [HttpGet("{id:int}", Name="ObterProduto")]
         public ActionResult<Produto> Get(int id)
         {
-            var produto = _context.Produtos?.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
-            if (produto is null) return NotFound("Produto não encontrado...");
-            return produto;
+            try
+            {
+                var produto = _context.Produtos?.AsNoTracking().FirstOrDefault(p => p.ProdutoId == id);
+                if (produto is null) return NotFound($"Produto com o id{id} não localizada");
+                return produto;
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Ocorreu um erro ao tratar sua solicitação");
+            }
         }
 
         [HttpPost]
         public ActionResult Post(Produto produto)
         {
-            if (produto is null) return BadRequest();
+            if (produto is null) return BadRequest("Dados Inválidos");
             _context.Produtos.Add(produto);
             _context.SaveChanges();
             return new CreatedAtRouteResult("ObterProduto", 
@@ -45,7 +61,7 @@ namespace APICatalogo.Controllers
         [HttpPut("{id:int}")]
         public ActionResult Put(int id, Produto produto)
         {
-            if (id != produto.ProdutoId) return BadRequest();
+            if (id != produto.ProdutoId) return BadRequest("Dados Inválidos");
             _context.Entry(produto).State = EntityState.Modified;
             _context.SaveChanges();
             return Ok(produto);
@@ -55,7 +71,7 @@ namespace APICatalogo.Controllers
         public ActionResult Delete(int id)
         {
             var produto = _context.Produtos.FirstOrDefault(p => p.ProdutoId == id);
-            if (produto is null) return NotFound("Produto não localizado");
+            if (produto is null) return NotFound($"Produto com o id{id} não localizada");
             _context.Produtos.Remove(produto);
             _context.SaveChanges();
             return Ok(produto);
