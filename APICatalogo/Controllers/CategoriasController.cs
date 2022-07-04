@@ -24,14 +24,14 @@ namespace APICatalogo.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Categoria>> Get()
+        public async Task<ActionResult<IEnumerable<Categoria>>> Get()
         {
             try
             {
-                var categoria = _context.Categorias?.AsNoTracking().Take(10).ToList();
+                var categoria = await _context.Categorias.AsNoTracking().Take(10).ToListAsync();
                 if (categoria is null)
                 {
-                    return NotFound("categoria não encontrada...");
+                    return NotFound();
                 }
 
                 return categoria;
@@ -44,14 +44,14 @@ namespace APICatalogo.Controllers
         }
 
         [HttpGet("{id:int}", Name = "ObterCategoria")]
-        public ActionResult<Categoria> Get(int id)
+        public async Task<ActionResult<Categoria>> Get(int id)
         {
             try
             {
-                var categoria = _context.Categorias?.AsNoTracking().FirstOrDefault(p => p.CategoriaId == id);
+                var categoria = await _context.Categorias.AsNoTracking().FirstOrDefaultAsync(p => p.CategoriaId == id);
                 if (categoria is null)
                 { 
-                    return NotFound($"Categoria com o id{id} não localizada");
+                    return NotFound();
                 }
 
                 return Ok(categoria);
