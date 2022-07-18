@@ -1,4 +1,5 @@
 ﻿using APICatalogo.Context;
+using APICatalogo.Filters;
 using APICatalogo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,17 +18,18 @@ namespace APICatalogo.Controllers
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(ApiLoggingFilter))]
         public async Task<ActionResult<IEnumerable<Produto>>> Get()
         {
             try
             {
-                var produtos = await _context.Produtos.AsNoTracking().Take(10).ToListAsync();
-                if (produtos is null)
+                var produto = await _context.Produtos.AsNoTracking().ToListAsync();
+                if (produto is null)
                 {
                     return NotFound();
                 }
 
-                return produtos;
+                return produto;
             }
             catch (Exception)
             {
@@ -56,7 +58,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post(Produto produto)
+        public ActionResult Post([FromBody] Produto produto)
         {
             if (produto is null)
             {
@@ -71,7 +73,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, Produto produto)
+        public ActionResult Put(int id, [FromBody] Produto produto)
         {
             if (id != produto.ProdutoId)
             {

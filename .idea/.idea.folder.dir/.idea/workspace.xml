@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a2e9e34-3c53-4dd1-bdab-5e1b0c0928bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/APICatalogo/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/FileContentIndex/27263d8f-a7ea-403d-8f44-f68cc9565e71.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/FileContentIndex/55b044c7-6500-4b8f-b431-38906dc4175e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/FileContentIndex/edbb254a-9be1-4584-b5de-1db75b7881e7.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/FileContentIndex/f6495d04-4343-44ee-87ed-420bfdfeea5c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/APICatalogo/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/APICatalogo/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/APICatalogo/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/apicatalogo.metadata.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/apicatalogo.metadata.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/apicatalogo.projects.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/apicatalogo.projects.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/APICatalogo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/APICatalogo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/Controllers/CategoriasController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/Controllers/CategoriasController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/Controllers/ProdutosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/Controllers/ProdutosController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/Models/Produto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/Models/Produto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/bin/Debug/net6.0/APICatalogo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/bin/Debug/net6.0/APICatalogo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/bin/Debug/net6.0/APICatalogo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/bin/Debug/net6.0/APICatalogo.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/bin/Debug/net6.0/APICatalogo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/bin/Debug/net6.0/APICatalogo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/APICatalogo.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/APICatalogo.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/APICatalogo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/ref/APICatalogo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/ref/APICatalogo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/refint/APICatalogo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Debug/net6.0/refint/APICatalogo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/Release/net6.0/APICatalogo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/Release/net6.0/APICatalogo.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APICatalogo/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/APICatalogo/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2C2GD48U2oER3QhBzGuHWpcTxa3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1657993180594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657993180594</updated>
+      <workItem from="1657993180595" duration="208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

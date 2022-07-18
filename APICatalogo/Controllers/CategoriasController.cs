@@ -16,13 +16,6 @@ namespace APICatalogo.Controllers
             _context = context;
         }
 
-        [HttpGet("produtos")]
-        public ActionResult<IEnumerable<Categoria>> GetCategoriaProduto()
-        {
-            //return _context.Categorias.Include(p => p.Produtos).ToList();
-            return _context.Categorias.Include(p => p.Produtos).Where(c => c.CategoriaId <= 5).ToList();
-        }
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> Get()
         {
@@ -64,7 +57,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post(Categoria categoria)
+        public ActionResult Post([FromBody] Categoria categoria)
         {
             if (categoria is null)
             {
@@ -79,7 +72,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, Categoria categoria)
+        public ActionResult Put(int id, [FromBody] Categoria categoria)
         {
             if (id != categoria.CategoriaId)
             {
